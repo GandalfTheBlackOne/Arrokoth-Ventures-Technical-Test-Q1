@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Remarks
+The original URL:  https://ftx.com/api/markets
+I failed to extracted the data from it, I have tried using normal fetch method to make a API call, I have also tried to use axios(https://axios-http.com/docs/intro), but it still have occured the 
+### "Access to fetch at 'https://ftx.com/api/markets' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled."
+I have tried to add the 
+headers: {
+  'Accept': '*',
+  'Access-Control-Allow-Origin': 'https://ftx.com/api/markets'
+}
+So, I choose to download the json file into a local file inside the src/data/data.json directory and directly extract the data from it
