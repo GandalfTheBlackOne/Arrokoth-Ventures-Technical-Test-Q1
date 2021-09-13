@@ -92,11 +92,8 @@ class App extends React.Component {
     // }
     
     return (
-      
       <div className="App">
-        {
-          
-        }
+
         <Router>
           <NavBar />
           <div>
@@ -104,9 +101,6 @@ class App extends React.Component {
               <Route path="/DataContentA" component={DataContentA}>
                 <DataContentA data={this.state.item_spot}/>
               </Route>
-              {/* {console.log('testing')}
-              {console.log(this.state.item_spot)} */}
-              {this.state.testing = ['B', ]}
               <Route path="/DataContentB" component={DataContentB}>
                 <DataContentB data={this.state.item_future}/>
               </Route>
