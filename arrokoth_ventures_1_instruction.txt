@@ -1,0 +1,36 @@
+Arrokoth Ventures 
+Technical Test for Frontend Developer
+Question 1
+
+Situation:
+  One of the pillars of Arrokoth Venture is the crypto trading business. As a frontend developer, you are tasked to build a frontend application and leverage various existing (and Live)  APIs for collecting and displaying financial data. This task is very critical as traders rely on your application to make real time trading decision
+
+Overall Layout
+This application should consist of two pages. Page A is used to display the data related to the SPOT market and Page B is used to display the data related to the FUTURE market. 
+The layout of Page A and Page B should be highly identical
+Both Page A and Page B should have a table to display the related data and they should have a NAV bar to navigate another page.
+Data should be refreshed every 10 seconds.
+
+Data Table Layout
+The web application should make a GET call to https://ftx.com/api/markets
+Filter the data according to the type. (“spot” and “future”) 
+Future naming is end with -PERP and the pair of spot is USDT 
+Display the asset/contract if the underlying asset is one of the following:
+BTC
+ETH
+For each row of data, 6 items should be displayed:
+Asset/Contract name
+Bid 
+Ask 
+Price
+Underlying Asset
+Volume in USD for last 24 hours
+
+
+Technical Requirement
+  You are welcomed to use any existing javascript framework to build this frontend application. However, using React.js or Vue.js is strongly preferred.
+
+
+Submission
+  After finishing this question , please initiate a new repository in your github , upload your code to the new repository and send us the repo URL via email. 
+(email address: tech@arrokothventures.com )
